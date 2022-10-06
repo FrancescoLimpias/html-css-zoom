@@ -9,3 +9,49 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+body > *{
+    /* Is this really necessary? */
+    width: 100%;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+
+
+/* STATUS CONTAINER */
+#status-container{
+    height: 5vh;
+
+    color: white;
+    background-color: black;
+    font-size: large;
+
+    /* 
+        It's used flexbox
+        to align inner sections
+        for better future mainteinability
+        when will be added more sections
+        to center.
+    */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#view-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#view-controls *{
+    margin-right: 1em;
+}
+#view-controls select{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
