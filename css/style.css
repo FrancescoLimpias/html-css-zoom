@@ -22,6 +22,7 @@ button{
     border: none;
     color: white;
     font-size: large;
+    padding: 0;
 }
 
 
@@ -112,6 +113,34 @@ button{
 
 
 /* CONTROLS CONTAINER */
+/* Left */
 #controls-container{
     height: 7vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control.button{
+    font-size: small;
+    margin: 1em 0.5em;
+}
+.control.button i{
+    display: block;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+}
+
+/* Center */
+#btn-share{
+    color: green;
+}
+
+/* Right */
+#end{
+    height: 7vh;
+    padding: 1em;
+    color: red;
+
+    background-color: rgba(255, 255, 255, 0.151);
 }
