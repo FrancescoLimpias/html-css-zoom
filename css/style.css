@@ -7,7 +7,10 @@
     /* border: 1px dashed orange; */
 }
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    color: white;
+    background-color: black;
 }
 body > *{
     /* Is this really necessary? */
@@ -54,4 +57,61 @@ button{
     background-color: transparent;
     color: white;
     border: none;
+}
+
+
+
+/* PEOPLE CONTAINER */
+#people-container{
+    height: 87vh;
+
+    padding-top: 2em;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.person{
+    position: relative;
+
+    flex: 0 1 calc(100vw / 7);
+    min-width: 200px;
+    min-height: 150px;
+
+    margin: 5px 5px;
+
+    overflow: hidden;
+}
+.person img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+}
+.person > span{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    font-size: medium;
+
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.264);
+    padding: 0.3em 0.2em;
+}
+.person .muted{
+    display: none;
+}
+.person.muted .muted{
+    display: inline;
+}
+
+
+
+/* CONTROLS CONTAINER */
+#controls-container{
+    height: 7vh;
 }
